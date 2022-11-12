@@ -151,7 +151,7 @@ export function Resume() {
               degree="Advanced Developing on AWS"
               location='Rio de Janeiro'
               startDate='July/2021'
-              endDate='July/2020'
+              endDate='July/2021'
               skills={["SQS", "Lambda", "IAM", "ECS", "ECR", "Dynamo", "VPC", 'Elasticache']}
             />
             <Education
