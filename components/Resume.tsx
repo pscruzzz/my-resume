@@ -20,16 +20,29 @@ export function Resume() {
             </Text>
           </Link>
           <Divider display={{ base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
-          <Text id="email" fontSize={"sm"}>
-            pedro.scruz@icloud.com
-          </Text>
-          <Divider display={{ base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
           <Link href="https://linkedin.com/in/pedrosantoscruz" target="_blank">
             <Text id="linkedin" fontSize={"sm"}>
               linkedin.com/in/pedrosantoscruz
             </Text>
           </Link>
+          <Divider display={{ base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
+          <Text id="email" fontSize={"sm"}>
+            pedro.scruz@icloud.com
+          </Text>
+          <Divider display={{ base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
+          <Text id="phone" fontSize={"sm"}>
+            +55 21 99566-6449
+          </Text>
         </Stack>
+      </Stack>
+      <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
+      <Stack align="center">
+        <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
+          Summary
+        </Heading>
+        <Text id="summary">
+          I&apos;m enthusiastic about coding and new technologies. My early trajectory brought a lot of business related knowledge, that complements my passion for problem solving, specially when it comes to programatic solutions.
+        </Text>
       </Stack>
       <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
       <Stack spacing={{ base: 4, lg: 0 }} direction={{ base: "column", lg: "row" }} w="100%" justify={"space-between"} className={"cvContent"}>
