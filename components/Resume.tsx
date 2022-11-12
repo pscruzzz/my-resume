@@ -42,7 +42,7 @@ export function Resume() {
               company='VTEX'
               jobTitle='Backend - Software Engineer'
               location='Rio de Janeiro'
-              startDate='April/2022'
+              startDate='04/2022'
               description={[
                 "Developing and maintaining key external marketplace connections, from catalog integration to order-placement with VTEX.",
               ]}
@@ -52,8 +52,8 @@ export function Resume() {
               company='VTEX'
               jobTitle='FullStack - Software Engineer'
               location='Rio de Janeiro'
-              startDate='June/2021'
-              endDate='May/2022'
+              startDate='06/2021'
+              endDate='05/2022'
               description={[
                 "Developing end-to-end applications that composes VTEX ecosystem (App Store) or product;",
                 "Architect, develop and present sponsored applications for major VTEX clients (such as Samsung, Carrefour and etc.)."
@@ -64,15 +64,15 @@ export function Resume() {
               company='VTEX'
               jobTitle='Partner Solutions Engineer'
               location='Rio de Janeiro'
-              startDate='July/2020'
-              endDate='May/2021'
+              startDate='07/2020'
+              endDate='05/2021'
             />
             <Role
               company='Spot Educação'
               jobTitle='Financial Planning Assistant'
               location='Rio de Janeiro'
-              startDate='May/2020'
-              endDate='June/2020'
+              startDate='05/2020'
+              endDate='06/2020'
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
@@ -84,29 +84,29 @@ export function Resume() {
               company='Spot Educação'
               internship="Financial Planning Intern"
               location='Rio de Janeiro'
-              startDate='September/2019'
-              endDate='April/2020'
+              startDate='09/2019'
+              endDate='04/2020'
             />
             <Internships
-              company='Coca-Cola'
+              company='Coca-Cola Brazil'
               internship="Commercial Finances Intern"
               location='Rio de Janeiro'
-              startDate='January/2019'
-              endDate='August/2019'
+              startDate='01/2019'
+              endDate='08/2019'
             />
             <Internships
-              company='G4 Global'
+              company='G4 Global Partners'
               internship="Finances Intern"
               location='Rio de Janeiro'
-              startDate='October/2018'
-              endDate='December/2018'
+              startDate='10/2018'
+              endDate='12/2018'
             />
             <Internships
-              company='G4 Global'
+              company='G4 Global Partners'
               internship="Business Intelligence Intern"
               location='Rio de Janeiro'
-              startDate='May/2018'
-              endDate='September/2018'
+              startDate='05/2018'
+              endDate='09/2018'
             />
           </Stack>
         </Stack>
@@ -121,16 +121,16 @@ export function Resume() {
               project="Shared Stream"
               projectRole="Founder"
               location='Rio de Janeiro'
-              startDate='July/2022'
+              startDate='07/2022'
               description={"Content management platform for streamers"}
-              skills={["Golang", "AWS", "Docker", "ReactJS"]}
+              skills={["Golang", "ReactJS", "Docker", "Pulumi", "ECS", "Elasticache", "ECR", "SES"]}
             />
             <Project
               project="Trizi E-commerce"
               projectRole="Software Engineer"
               location='Rio de Janeiro'
-              startDate='January/2022'
-              skills={["ReactJS", "Stripe", "NextJS"]}
+              startDate='01/2022'
+              skills={["ReactJS", "Stripe", "NextJS", "Chakra UI"]}
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
@@ -142,32 +142,32 @@ export function Resume() {
               institution='Pontifical Catholic University of Rio de Janeiro'
               degree="Business Administration Bachelor's Degree"
               location='Rio de Janeiro'
-              startDate='June/2016'
-              endDate='June/2020'
+              startDate='06/2016'
+              endDate='06/2020'
             />
             <Education
               institution='Amazon'
               degree="Advanced Developing on AWS"
               location='Rio de Janeiro'
-              startDate='July/2021'
-              endDate='July/2021'
+              startDate='07/2021'
+              endDate='07/2021'
               skills={["SQS", "Lambda", "IAM", "ECS", "ECR", "Dynamo", "VPC", 'Elasticache']}
             />
             <Education
               institution='Rocketseat'
               degree="FullStack Developer Bootcamp"
               location='Rio de Janeiro'
-              startDate='January/2020'
-              endDate='June/2020'
+              startDate='01/2020'
+              endDate='07/2020'
               skills={["Typescript", "Node", "ReactJS", "NextJS", "Docker"]}
             />
             <Education
               institution='Full Cycle'
               degree="Full Cycle Developer Bootcamp"
               location='Rio de Janeiro'
-              startDate='January/2020'
-              endDate='June/2020'
-              skills={["Golang", "Docker", "Kafka"]}
+              startDate='06/2021'
+              endDate='12/2021'
+              skills={["Golang", "Docker", "Kafka", "AWS"]}
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
