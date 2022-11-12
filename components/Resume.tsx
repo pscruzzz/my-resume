@@ -80,7 +80,7 @@ export function Resume() {
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
           <Stack justify="flex-start" spacing={4}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
-              Internship
+              Internships
             </Heading>
             <Internships
               company='Spot Educação'
