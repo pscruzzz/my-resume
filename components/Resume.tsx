@@ -10,22 +10,20 @@ export function Resume() {
   return (
     <Stack spacing={4} direction={"column"} align="center" justify="center" w="100%" className='cvWrapper'>
       <Stack align="center" justify="center" spacing={2} className={"cvHeader"}>
-        <Link href='pedro-cruz-cv.pdf' download>
-          <Heading as="h1" size={"md"}>
-            Pedro dos Santos Cruz
-          </Heading>
-        </Link>
-        <Stack align="center" justify={"center"} direction={"row"} spacing={2} className={"cvLinks"}>
+        <Heading as="h1" size={"md"}>
+          Pedro dos Santos Cruz
+        </Heading>
+        <Stack align="center" justify={"center"} direction={{ base: "column", lg: "row" }} spacing={{ base: 0, lg: 2 }} className={"cvLinks"}>
           <Link href="https://github.com/pscruzzz" target="_blank">
             <Text id="github" fontSize={"sm"}>
               github.com/pscruzzz
             </Text>
           </Link>
-          <Divider h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
+          <Divider display={{ base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
           <Text id="email" fontSize={"sm"}>
             pedro.scruz@icloud.com
           </Text>
-          <Divider h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
+          <Divider display={{ base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
           <Link href="https://linkedin.com/in/pedrosantoscruz" target="_blank">
             <Text id="linkedin" fontSize={"sm"}>
               linkedin.com/in/pedrosantoscruz
@@ -34,8 +32,8 @@ export function Resume() {
         </Stack>
       </Stack>
       <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
-      <Stack direction={"row"} w="100%" justify={"space-between"} className={"cvContent"}>
-        <Stack justify="flex-start" spacing={4} pr={1} w="48%">
+      <Stack direction={{ base: "column", lg: "row" }} w="100%" justify={"space-between"} className={"cvContent"}>
+        <Stack justify="flex-start" spacing={4} pr={1} w={{ base: "100%", lg: "48%" }}>
           <Stack justify="flex-start" spacing={4}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Professional Experience
@@ -112,8 +110,8 @@ export function Resume() {
             />
           </Stack>
         </Stack>
-        <Divider h="auto" w="0.5px" bg={"gray.300"} orientation='vertical' />
-        <Stack justify="flex-start" spacing={4} pl={1} w="48%">
+        <Divider display={{ base: "none", lg: "flex" }} h="auto" w="0.5px" bg={"gray.300"} orientation='vertical' />
+        <Stack justify="flex-start" spacing={4} pl={1} w={{ base: "100%", lg: "48%" }}>
           <Stack justify="flex-start" spacing={4}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Personal Projects

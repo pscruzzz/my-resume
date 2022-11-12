@@ -11,7 +11,7 @@ export default function Index() {
         <meta name="description" content="Pedro Cruz CV" />
       </Head>
 
-      <Stack align="center" justify="center" w="100%" minH="100vh" maxWidth="794px" className='cvContainer' py={8}>
+      <Stack align="center" justify="center" w="100%" minH="100vh" maxWidth="794px" className='cvContainer' py={8} px={{ base: 8, lg: 0 }}>
         <Resume />
       </Stack>
     </Flex >
