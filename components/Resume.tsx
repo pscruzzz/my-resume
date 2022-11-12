@@ -2,6 +2,7 @@ import { Divider, Flex, Heading, Stack, Text, Link, UnorderedList, ListItem } fr
 import Head from 'next/head'
 import { Education } from './Education'
 import { Internships } from './Internships'
+import { Language } from './Language'
 import { Project } from './Project'
 import { Role } from './Role'
 
@@ -168,6 +169,20 @@ export function Resume() {
               startDate='July/2021'
               endDate='July/2020'
               skills={["SQS", "Lambda", "IAM", "ECS", "Dynamo"]}
+            />
+          </Stack>
+          <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
+          <Stack justify="flex-start" spacing={4}>
+            <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
+              Languages
+            </Heading>
+            <Language
+              language='English'
+              level='Fluent'
+            />
+            <Language
+              language='Portuguese'
+              level='Native'
             />
           </Stack>
         </Stack>
