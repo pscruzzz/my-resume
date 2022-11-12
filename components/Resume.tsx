@@ -147,6 +147,14 @@ export function Resume() {
               endDate='June/2020'
             />
             <Education
+              institution='Amazon'
+              degree="Advanced Developing on AWS"
+              location='Rio de Janeiro'
+              startDate='July/2021'
+              endDate='July/2020'
+              skills={["SQS", "Lambda", "IAM", "ECS", "ECR", "Dynamo", "VPC", 'Elasticache']}
+            />
+            <Education
               institution='Rocketseat'
               degree="FullStack Developer Bootcamp"
               location='Rio de Janeiro'
@@ -161,14 +169,6 @@ export function Resume() {
               startDate='January/2020'
               endDate='June/2020'
               skills={["Golang", "Docker", "Kafka"]}
-            />
-            <Education
-              institution='Amazon'
-              degree="Advanced Developing on AWS"
-              location='Rio de Janeiro'
-              startDate='July/2021'
-              endDate='July/2020'
-              skills={["SQS", "Lambda", "IAM", "ECS", "Dynamo"]}
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
