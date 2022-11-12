@@ -32,8 +32,8 @@ export function Resume() {
         </Stack>
       </Stack>
       <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
-      <Stack direction={{ base: "column", lg: "row" }} w="100%" justify={"space-between"} className={"cvContent"}>
-        <Stack justify="flex-start" spacing={4} pr={1} w={{ base: "100%", lg: "48%" }}>
+      <Stack spacing={{ base: 4, lg: 0 }} direction={{ base: "column", lg: "row" }} w="100%" justify={"space-between"} className={"cvContent"}>
+        <Stack justify="flex-start" spacing={4} pr={{ base: 0, lg: 1 }} w={{ base: "100%", lg: "48%" }}>
           <Stack justify="flex-start" spacing={4}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Professional Experience
@@ -110,8 +110,9 @@ export function Resume() {
             />
           </Stack>
         </Stack>
-        <Divider display={{ base: "none", lg: "flex" }} h="auto" w="0.5px" bg={"gray.300"} orientation='vertical' />
-        <Stack justify="flex-start" spacing={4} pl={1} w={{ base: "100%", lg: "48%" }}>
+        <Divider display={{ base: "none", lg: "flex" }} h={{ base: "0.5px", lg: "auto" }} w={{ base: "100%", lg: "0.5px" }} bg={"gray.300"} orientation='vertical' />
+        <Divider display={{ base: "flex", lg: "none" }} h={{ base: "0.5px", lg: "auto" }} w={{ base: "100%", lg: "0.5px" }} bg={"gray.300"} orientation='horizontal' />
+        <Stack justify="flex-start" spacing={4} pl={{ base: 0, lg: 1 }} w={{ base: "100%", lg: "48%" }}>
           <Stack justify="flex-start" spacing={4}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Personal Projects
