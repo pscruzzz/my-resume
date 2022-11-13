@@ -6,48 +6,52 @@ import { Language } from './Language'
 import { Project } from './Project'
 import { Role } from './Role'
 
-export function Resume() {
+interface ResumeProps {
+  isPDF?: boolean
+}
+
+export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
   return (
-    <Stack spacing={4} direction={"column"} align="center" justify="center" w="100%" className='cvWrapper'>
+    <Stack spacing={2} direction={"column"} align="center" justify="center" w="100%" className='cvWrapper'>
       <Stack align="center" justify="center" spacing={2} className={"cvHeader"}>
         <Heading as="h1" size={"md"}>
           Pedro dos Santos Cruz
         </Heading>
-        <Stack align="center" justify={"center"} direction={{ base: "column", lg: "row" }} spacing={{ base: 0, lg: 2 }} className={"cvLinks"}>
+        <Stack align="center" justify={"center"} direction={isPDF ? "row" : { base: "column", lg: "row" }} spacing={isPDF ? 2 : { base: 0, lg: 2 }} className={"cvLinks"}>
           <Link href="https://github.com/pscruzzz" target="_blank">
             <Text id="github" fontSize={"sm"}>
               github.com/pscruzzz
             </Text>
           </Link>
-          <Divider display={{ base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
+          <Divider display={isPDF ? "flex" : { base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
           <Link href="https://linkedin.com/in/pedrosantoscruz" target="_blank">
             <Text id="linkedin" fontSize={"sm"}>
               linkedin.com/in/pedrosantoscruz
             </Text>
           </Link>
-          <Divider display={{ base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
+          <Divider display={isPDF ? "flex" : { base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
           <Text id="email" fontSize={"sm"}>
             pedro.scruz@icloud.com
           </Text>
-          <Divider display={{ base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
+          <Divider display={isPDF ? "flex" : { base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
           <Text id="phone" fontSize={"sm"}>
             +55 21 99566-6449
           </Text>
         </Stack>
       </Stack>
       <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
-      <Stack align="center">
+      <Stack align="center" spacing={2}>
         <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
           Summary
         </Heading>
-        <Text id="summary">
-          I&apos;m enthusiastic about coding and new technologies. My early trajectory brought a lot of business related knowledge, that complements my passion for problem solving, specially when it comes to programatic solutions.
+        <Text id="summary" fontSize={"xs"}>
+          I&apos;m enthusiastic about coding and new technologies. My early trajectory brought a lot of business related knowledge, that complements my passion for problem solving, specially when it comes to programatic solutions. I often work with Golang, Node (with Typescript) or .NET Core in the backend, while in the frontend I commonly use ReactJS (also with Typescript) and NextJS!
         </Text>
       </Stack>
       <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
-      <Stack spacing={{ base: 4, lg: 0 }} direction={{ base: "column", lg: "row" }} w="100%" justify={"space-between"} className={"cvContent"}>
-        <Stack justify="flex-start" spacing={4} pr={{ base: 0, lg: 1 }} w={{ base: "100%", lg: "48%" }}>
-          <Stack justify="flex-start" spacing={4}>
+      <Stack spacing={isPDF ? 0 : { base: 4, lg: 0 }} direction={isPDF ? "row" : { base: "column", lg: "row" }} w="100%" justify={"space-between"} className={"cvContent"}>
+        <Stack justify="flex-start" spacing={2} pr={isPDF ? 1 : { base: 0, lg: 1 }} w={isPDF ? "48%" : { base: "100%", lg: "48%" }}>
+          <Stack justify="flex-start" spacing={2}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Professional Experience
             </Heading>
@@ -57,7 +61,7 @@ export function Resume() {
               location='Rio de Janeiro'
               startDate='04/2022'
               description={[
-                "Developing and maintaining key external marketplace connections, from catalog integration to order-placement with VTEX.",
+                "Develop and maintain key external marketplace connections, from catalog integration to order-placement.",
               ]}
               skills={["AWS", ".Net Core", ".Net Framework", "C#", "Docker", "Jenkins"]}
             />
@@ -68,8 +72,8 @@ export function Resume() {
               startDate='06/2021'
               endDate='05/2022'
               description={[
-                "Developing end-to-end applications that composes VTEX ecosystem (App Store) or product;",
-                "Architect, develop and present sponsored applications for major VTEX clients (such as Samsung, Carrefour and etc.)."
+                "Develop end-to-end applications that composes VTEX ecosystem (App Store) or product;",
+                "Architect, develop and present sponsored applications for major VTEX clients (such as Samsung and Carrefour)."
               ]}
               skills={["AWS", "Typescript", "Node", "ReactJS", "GraphQL"]}
             />
@@ -89,7 +93,7 @@ export function Resume() {
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
-          <Stack justify="flex-start" spacing={4}>
+          <Stack justify="flex-start" spacing={2}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Internships
             </Heading>
@@ -109,55 +113,42 @@ export function Resume() {
             />
             <Internships
               company='G4 Global Partners'
-              internship="Finances Intern"
-              location='Rio de Janeiro'
-              startDate='10/2018'
-              endDate='12/2018'
-            />
-            <Internships
-              company='G4 Global Partners'
-              internship="Business Intelligence Intern"
+              internship="Business Intelligence & Finances Intern"
               location='Rio de Janeiro'
               startDate='05/2018'
-              endDate='09/2018'
+              endDate='12/2018'
             />
           </Stack>
         </Stack>
-        <Divider display={{ base: "none", lg: "flex" }} h={{ base: "0.5px", lg: "auto" }} w={{ base: "100%", lg: "0.5px" }} bg={"gray.300"} orientation='vertical' />
-        <Divider display={{ base: "flex", lg: "none" }} h={{ base: "0.5px", lg: "auto" }} w={{ base: "100%", lg: "0.5px" }} bg={"gray.300"} orientation='horizontal' />
-        <Stack justify="flex-start" spacing={4} pl={{ base: 0, lg: 1 }} w={{ base: "100%", lg: "48%" }}>
-          <Stack justify="flex-start" spacing={4}>
+        <Divider display={isPDF ? "flex" : { base: "none", lg: "flex" }} h={"auto"} w={"0.5px"} bg={"gray.300"} orientation='vertical' />
+        <Divider display={isPDF ? "none" : { base: "flex", lg: "none" }} h={"0.5px"} w={"100%"} bg={"gray.300"} orientation='horizontal' />
+        <Stack justify="flex-start" spacing={2} pl={isPDF ? 1 : { base: 0, lg: 1 }} w={isPDF ? "48%" : { base: "100%", lg: "48%" }}>
+          <Stack justify="flex-start" spacing={2}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
-              Personal Projects
+              Side Projects
             </Heading>
             <Project
               project="Shared Stream"
-              projectRole="Founder"
               location='Rio de Janeiro'
               startDate='07/2022'
-              description={"Content management platform for streamers"}
+              description={"Content management platform for streamers. This project is still under development."}
+              roleDescriptions={["Develop and architect the entire product, as well as business designing."]}
               skills={["Golang", "ReactJS", "Docker", "Pulumi", "ECS", "Elasticache", "ECR", "SES"]}
             />
             <Project
               project="Trizi E-commerce"
-              projectRole="Software Engineer"
               location='Rio de Janeiro'
               startDate='01/2022'
-              skills={["ReactJS", "Stripe", "NextJS", "Chakra UI"]}
+              description={"E-commerce for handmade products"}
+              roleDescriptions={["Develop and architect the entire product."]}
+              skills={["ReactJS", "Stripe", "NextJS", "Chakra UI", "Lambda"]}
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
-          <Stack justify="flex-start" spacing={4}>
+          <Stack justify="flex-start" spacing={2}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Education
             </Heading>
-            <Education
-              institution='Pontifical Catholic University of Rio de Janeiro'
-              degree="Business Administration Bachelor's Degree"
-              location='Rio de Janeiro'
-              startDate='06/2016'
-              endDate='06/2020'
-            />
             <Education
               institution='Amazon'
               degree="Advanced Developing on AWS"
@@ -167,6 +158,15 @@ export function Resume() {
               skills={["SQS", "Lambda", "IAM", "ECS", "ECR", "Dynamo", "VPC", 'Elasticache']}
             />
             <Education
+              institution='Full Cycle'
+              degree="Full Cycle Developer Bootcamp"
+              location='Rio de Janeiro'
+              startDate='06/2021'
+              endDate='12/2021'
+              skills={["Golang", "Docker", "Kafka", "AWS"]}
+            />
+
+            <Education
               institution='Rocketseat'
               degree="FullStack Developer Bootcamp"
               location='Rio de Janeiro'
@@ -175,16 +175,15 @@ export function Resume() {
               skills={["Typescript", "Node", "ReactJS", "NextJS", "Docker"]}
             />
             <Education
-              institution='Full Cycle'
-              degree="Full Cycle Developer Bootcamp"
+              institution='Pontifical Catholic University of Rio de Janeiro'
+              degree="Business Administration Bachelor's Degree"
               location='Rio de Janeiro'
-              startDate='06/2021'
-              endDate='12/2021'
-              skills={["Golang", "Docker", "Kafka", "AWS"]}
+              startDate='06/2016'
+              endDate='06/2020'
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
-          <Stack justify="flex-start" spacing={4}>
+          <Stack justify="flex-start" spacing={2}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Languages
             </Heading>

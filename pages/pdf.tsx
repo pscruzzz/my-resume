@@ -1,6 +1,6 @@
 import { Divider, Flex, Heading, Stack, Text, Link, UnorderedList, ListItem } from '@chakra-ui/react'
 import Head from 'next/head'
-import { ResumePDF } from '../components/ResumePDF'
+import { Resume } from '../components/Resume'
 
 
 export default function Pdf() {
@@ -11,8 +11,8 @@ export default function Pdf() {
         <meta name="description" content="Pedro Cruz CV" />
       </Head>
 
-      <Stack align="center" justify="center" w="100%" minH="100vh" maxWidth="794px" className='cvContainer' py={8}>
-        <ResumePDF />
+      <Stack align="center" justify="center" w="100%" minH="100vh" maxWidth="794px" className='cvContainer' py={2}>
+        <Resume isPDF={true} />
       </Stack>
     </Flex >
   )

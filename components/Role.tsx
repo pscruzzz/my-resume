@@ -46,7 +46,8 @@ export const Role: React.FC<RoleProps> = ({ company, description, endDate, jobTi
           </Heading>
         </Stack>
       </Stack>
-      {!!description?.length &&
+      {
+        !!description?.length &&
         <UnorderedList id="job-description" pl={4} fontSize={'xs'}>
           {description?.map(jobDescription => {
             return (
