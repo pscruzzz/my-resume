@@ -50,8 +50,8 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
       </Stack>
       <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
       <Stack spacing={isPDF ? 0 : { base: 4, lg: 0 }} direction={isPDF ? "row" : { base: "column", lg: "row" }} w="100%" justify={"space-between"} className={"cvContent"}>
-        <Stack justify="flex-start" spacing={2} pr={isPDF ? 1 : { base: 0, lg: 1 }} w={isPDF ? "48%" : { base: "100%", lg: "48%" }}>
-          <Stack justify="flex-start" spacing={2}>
+        <Stack justify="flex-start" spacing={4} pr={isPDF ? 1 : { base: 0, lg: 1 }} w={isPDF ? "48%" : { base: "100%", lg: "48%" }}>
+          <Stack justify="flex-start" spacing={4}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Professional Experience
             </Heading>
@@ -93,7 +93,7 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
-          <Stack justify="flex-start" spacing={2}>
+          <Stack justify="flex-start" spacing={4}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Internships
             </Heading>
@@ -122,8 +122,8 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
         </Stack>
         <Divider display={isPDF ? "flex" : { base: "none", lg: "flex" }} h={"auto"} w={"0.5px"} bg={"gray.300"} orientation='vertical' />
         <Divider display={isPDF ? "none" : { base: "flex", lg: "none" }} h={"0.5px"} w={"100%"} bg={"gray.300"} orientation='horizontal' />
-        <Stack justify="flex-start" spacing={2} pl={isPDF ? 1 : { base: 0, lg: 1 }} w={isPDF ? "48%" : { base: "100%", lg: "48%" }}>
-          <Stack justify="flex-start" spacing={2}>
+        <Stack justify="flex-start" spacing={4} pl={isPDF ? 1 : { base: 0, lg: 1 }} w={isPDF ? "48%" : { base: "100%", lg: "48%" }}>
+          <Stack justify="flex-start" spacing={4}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Side Projects
             </Heading>
@@ -145,7 +145,7 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
-          <Stack justify="flex-start" spacing={2}>
+          <Stack justify="flex-start" spacing={4}>
             <Heading as="h3" size={"sm"} fontWeight={"normal"} color={"gray.500"}>
               Education
             </Heading>
