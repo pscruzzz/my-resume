@@ -5,6 +5,7 @@ import { Internships } from './Internships'
 import { Language } from './Language'
 import { Project } from './Project'
 import { Role } from './Role'
+import { QuickRole } from './QuickRole'
 
 interface ResumeProps {
   isPDF?: boolean
@@ -57,9 +58,21 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
             </Heading>
             <Role
               company='VTEX'
-              jobTitle='Backend - Software Engineer'
+              jobTitle='Backend - Software Engineer - OMS'
               location='Rio de Janeiro'
-              startDate='04/2022'
+              startDate='01/2023'
+              description={[
+                "Develop and maintain 9 backend services that composes the Order Management Systems.",
+                "Projects: PII Compliant Subscriptions, Order Workflow Resilience, Disaster Recovery Plans",
+              ]}
+              skills={["AWS", ".Net Core", "C#", "Docker", "Jenkins"]}
+            />
+            <Role
+              company='VTEX'
+              jobTitle='Backend - Software Engineer - Connections'
+              location='Rio de Janeiro'
+              startDate='06/2022'
+              endDate='01/2023'
               description={[
                 "Develop and maintain key external marketplace connections, from catalog integration to order-placement.",
               ]}
@@ -77,14 +90,14 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
               ]}
               skills={["AWS", "Typescript", "Node", "ReactJS", "GraphQL"]}
             />
-            <Role
+            <QuickRole
               company='VTEX'
               jobTitle='Partner Solutions Engineer'
               location='Rio de Janeiro'
               startDate='07/2020'
               endDate='05/2021'
             />
-            <Role
+            <QuickRole
               company='Spot Educação'
               jobTitle='Financial Planning Assistant'
               location='Rio de Janeiro'
