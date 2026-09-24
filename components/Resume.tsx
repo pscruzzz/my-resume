@@ -32,7 +32,7 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
           </Link>
           <Divider display={isPDF ? "flex" : { base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
           <Text id="email" fontSize={"sm"}>
-            pedro.scruz@icloud.com
+            pscruzzz@outlook.com
           </Text>
           <Divider display={isPDF ? "flex" : { base: "none", lg: "flex" }} h="25px" w="1px" bg={"gray.300"} orientation='vertical' />
           <Text id="phone" fontSize={"sm"}>
@@ -46,7 +46,7 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
           Summary
         </Heading>
         <Text id="summary" fontSize={"xs"}>
-          I&apos;m enthusiastic about coding and new technologies. My early trajectory brought a lot of business related knowledge, that complements my passion for problem solving, specially when it comes to programatic solutions. I often work with Golang, Node (with Typescript) or .NET Core in the backend, while in the frontend I commonly use ReactJS (also with Typescript) and NextJS!
+          I&apos;m a Senior Software Engineer who loves coding, learning new technologies, and solving problems. I work across the stack, with a particular enthusiasm for .NET, Go, and TypeScript, and enjoy building interfaces with React as much as the services behind them. My background in business administration and finance helps me connect technical decisions with the problems people and businesses need to solve.
         </Text>
       </Stack>
       <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
@@ -57,10 +57,21 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
               Professional Experience
             </Heading>
             <Role
+              company='Flutter Entertainment'
+              jobTitle='Software Engineer - Backend'
+              location='Rio de Janeiro'
+              startDate='07/2024'
+              description={[
+                "Develop and maintain microservices for bet placement, settlement, odds handling, and cashout on the Sportsbook team (Bet Nacional).",
+              ]}
+              skills={["AWS", ".NET Core", "Golang (Go)", "OpenRouter", "OpenCode"]}
+            />
+            <Role
               company='VTEX'
               jobTitle='Backend - Software Engineer - OMS'
               location='Rio de Janeiro'
               startDate='01/2023'
+              endDate='06/2024'
               description={[
                 "Develop and maintain 9 backend services that composes the Order Management Systems.",
                 "Projects: PII Compliant Subscriptions, Order Workflow Resilience, Disaster Recovery Plans",
@@ -71,8 +82,8 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
               company='VTEX'
               jobTitle='Backend - Software Engineer - Connections'
               location='Rio de Janeiro'
-              startDate='06/2022'
-              endDate='01/2023'
+              startDate='04/2022'
+              endDate='12/2022'
               description={[
                 "Develop and maintain key external marketplace connections, from catalog integration to order-placement.",
               ]}
@@ -83,7 +94,7 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
               jobTitle='FullStack - Software Engineer'
               location='Rio de Janeiro'
               startDate='06/2021'
-              endDate='05/2022'
+              endDate='04/2022'
               description={[
                 "Develop end-to-end applications that composes VTEX ecosystem (App Store) or product;",
                 "Architect, develop and present sponsored applications for major VTEX clients (such as Samsung and Carrefour)."
@@ -95,14 +106,14 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
               jobTitle='Partner Solutions Engineer'
               location='Rio de Janeiro'
               startDate='07/2020'
-              endDate='05/2021'
+              endDate='06/2021'
             />
             <QuickRole
               company='Spot Educação'
               jobTitle='Financial Planning Assistant'
               location='Rio de Janeiro'
               startDate='05/2020'
-              endDate='06/2020'
+              endDate='07/2020'
             />
           </Stack>
           <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
@@ -115,21 +126,21 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
               internship="Financial Planning Intern"
               location='Rio de Janeiro'
               startDate='09/2019'
-              endDate='04/2020'
+              endDate='05/2020'
             />
             <Internships
               company='Coca-Cola Brazil'
               internship="Commercial Finances Intern"
               location='Rio de Janeiro'
               startDate='01/2019'
-              endDate='08/2019'
+              endDate='09/2019'
             />
             <Internships
               company='G4 Global Partners'
               internship="Business Intelligence & Finances Intern"
               location='Rio de Janeiro'
-              startDate='05/2018'
-              endDate='12/2018'
+              startDate='02/2018'
+              endDate='11/2018'
             />
           </Stack>
         </Stack>
@@ -202,7 +213,11 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
             </Heading>
             <Language
               language='English'
-              level='Fluent'
+              level='Native or Bilingual'
+            />
+            <Language
+              language='French'
+              level='Professional Working'
             />
             <Language
               language='Portuguese'
