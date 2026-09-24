@@ -1,0 +1,57 @@
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm;
+  }
+
+  /* Paper widths fall below Chakra's desktop breakpoint. Keep print in columns. */
+  .cvContainer {
+    min-height: 0 !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  .cvContent {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+  }
+
+  .cvContent > .chakra-stack {
+    width: 48% !important;
+    min-width: 0;
+    margin: 0 !important;
+  }
+
+  .cvContent > hr[aria-orientation='vertical'] {
+    display: block !important;
+    align-self: stretch;
+    margin: 0 !important;
+  }
+
+  .cvContent > hr[aria-orientation='horizontal'] {
+    display: none !important;
+  }
+
+  .cvLinks {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .cvLinks > * {
+    margin: 0 !important;
+  }
+
+  .cvLinks > hr {
+    display: block !important;
+  }
+
+  /* Keep individual entries together without forcing entire columns to a page. */
+  .cvContent > .chakra-stack > .chakra-stack > .chakra-stack {
+    break-inside: avoid;
+  }
+
+  .cvContent h3 {
+    break-after: avoid;
+  }
+}
