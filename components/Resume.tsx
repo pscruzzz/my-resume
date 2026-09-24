@@ -64,7 +64,7 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
               description={[
                 "Develop and maintain microservices for bet placement, settlement, odds handling, and cashout on the Sportsbook team (Bet Nacional).",
               ]}
-              skills={["AWS", ".NET Core", "Golang (Go)"]}
+              skills={["AWS", ".NET Core", "Golang (Go)", "OpenRouter", "OpenCode"]}
             />
             <Role
               company='VTEX'
