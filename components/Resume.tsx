@@ -46,7 +46,7 @@ export const Resume: React.FC<ResumeProps> = ({ isPDF = false }) => {
           Summary
         </Heading>
         <Text id="summary" fontSize={"xs"}>
-          Backend Software Engineer at Flutter Entertainment, developing sportsbook microservices for Bet Nacional using AWS, .NET Core, and Go. Previously worked on order management systems, marketplace integrations, and full-stack applications at VTEX. My background in business administration and finance complements my approach to solving technical and business problems.
+          I&apos;m a Senior Software Engineer who loves coding, learning new technologies, and solving problems. I work across the stack, with a particular enthusiasm for .NET, Go, and TypeScript, and enjoy building interfaces with React as much as the services behind them. My background in business administration and finance helps me connect technical decisions with the problems people and businesses need to solve.
         </Text>
       </Stack>
       <Divider h="0.5px" w="100%" bg={"gray.300"} orientation='horizontal' />
